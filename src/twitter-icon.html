@@ -1,0 +1,14 @@
+<polymer-element name="twitter-icon" attributes="user size">
+
+  <template>
+    <img src="https://twitter.com/api/users/profile_image/{{user}}?size={{size}}" />
+  </template>
+
+  <script>
+    Polymer('twitter-icon', {
+      user: '',
+      size: 'normal'
+    });
+  </script>
+
+</polymer-element>
